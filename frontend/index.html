@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMate AI</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>
+            <i class="fa-solid fa-brain"></i>
+            KnowMate AI
+        </h1>
+
+        <p>Your Personal Knowledge Companion</p>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="container">
+
+        <!-- ================= LEFT SIDEBAR ================= -->
+
+        <aside class="left-sidebar">
+
+            <h2>
+                <i class="fa-solid fa-folder-open"></i>
+                Documents
+            </h2>
+
+            <!-- Upload -->
+            <div class="upload-section">
+
+                <input
+                    type="file"
+                    id="pdfFile"
+                    accept=".pdf"
+                    hidden>
+
+                <label
+                    for="pdfFile"
+                    class="choose-file-btn">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Choose PDF
+                </label>
+
+                <p id="selectedFile">
+                    No file selected
+                </p>
+
+                <button id="uploadBtn" type="button">
+                    <i class="fa-solid fa-upload"></i>
+                    Upload PDF
+                </button>
+
+                <!-- Upload Status -->
+                <p id="uploadStatus"
+                   style="margin-top:10px;font-size:14px;color:#4CAF50;">
+                    Waiting for upload...
+                </p>
+
+                <!-- Current Document -->
+                <div style="margin-top:12px;">
+                    <strong>Current Document:</strong>
+                    <p id="currentDocument"
+                       style="margin-top:6px;color:#90caf9;">
+                        None
+                    </p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Uploaded PDFs -->
+            <div class="document-section">
+                <h3>
+                    <i class="fa-solid fa-file-pdf" style="color:#e53935;"></i>
+                    Uploaded PDFs
+                </h3>
+
+                <ul id="documentList">
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- ================= CHAT ================= -->
+
+        <main class="chat-container">
+
+            <div id="chatBox">
+                <div class="bot message">
+                    <i class="fa-solid fa-robot"></i>
+                    Welcome 👋
+                    <br><br>
+                    Upload a PDF, enter a PDF URL, paste text, or process a
+                    YouTube video. Then ask any question.
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask anything about your knowledge base...">
+
+                <button id="askBtn" type="button" aria-label="Send question">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send
+                </button>
+            </div>
+
+        </main>
+
+        <!-- ================= RIGHT SIDEBAR ================= -->
+
+        <aside class="right-sidebar">
+
+            <h2>
+                <i class="fa-solid fa-bolt"></i>
+                Sources
+            </h2>
+
+            <!-- PDF URL -->
+            <div class="card">
+                <h3>
+                    <i class="fa-solid fa-link"></i>
+                    PDF URL
+                </h3>
+
+                <input
+                    type="text"
+                    id="pdfUrl"
+                    placeholder="https://example.com/file.pdf">
+
+                <button id="downloadPdfBtn" type="button">
+                    <i class="fa-solid fa-download"></i>
+                    Download PDF
+                </button>
+            </div>
+
+            <!-- Paste Text -->
+            <div class="card">
+                <h3>
+                    <i class="fa-solid fa-paste"></i>
+                    Paste Text
+                </h3>
+
+                <textarea
+                    id="pasteText"
+                    rows="7"
+                    placeholder="Paste your text here..."></textarea>
+
+                <button id="submitTextBtn" type="button">
+                    <i class="fa-solid fa-file-import"></i>
+                    Submit Text
+                </button>
+            </div>
+
+            <!-- YouTube -->
+            <div class="card">
+                <h3>
+                    <i class="fa-brands fa-youtube" style="color:#ff0000;"></i>
+                    YouTube MCP
+                </h3>
+
+                <input
+                    type="text"
+                    id="youtubeUrl"
+                    placeholder="https://www.youtube.com/watch?v=...">
+
+                <button id="youtubeBtn" type="button">
+                    <i class="fa-solid fa-play"></i>
+                    Process Video
+                </button>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

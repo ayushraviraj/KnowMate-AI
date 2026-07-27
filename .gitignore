@@ -1,0 +1,28 @@
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Upload Folder
+uploads/
+
+# Logs
+*.log
+
+# MCP Build Files
+*.egg-info/
+
+# OS Files
+.DS_Store
+Thumbs.db
