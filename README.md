@@ -20,6 +20,34 @@ KnowMate AI is an AI-powered Retrieval-Augmented Generation (RAG) assistant that
 
 ---
 
+## 🏗️ How It Works
+
+```text
+                         User Input
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+         PDF              PDF URL          YouTube / Text
+          │                  │                  │
+          └──────────────────┼──────────────────┘
+                             ↓
+                      Data Extraction
+                             ↓
+                         Chunking
+                             ↓
+                        Embeddings
+                             ↓
+                    FAISS Vector Store
+                             ↓
+                         Retriever
+                             ↓
+                        LangGraph
+                             ↓
+                         Groq LLM
+                             ↓
+                  Context-Aware Response
+```
+---
 ## 📸 Screenshots
 
 ### 🏠 Home
@@ -50,6 +78,18 @@ KnowMate AI is an AI-powered Retrieval-Augmented Generation (RAG) assistant that
 
 ---
 
+## 💡 What I Built
+
+- Designed the multi-source RAG pipeline
+- Implemented document ingestion and processing
+- Implemented semantic retrieval using FAISS
+- Built the LangGraph workflow for query processing
+- Developed the FastAPI backend
+- Integrated the Groq LLM
+- Integrated MCP-based YouTube transcript retrieval
+- Built the frontend for interacting with the knowledge sources
+
+---
 ## 📂 Project Structure
 
 ```text
