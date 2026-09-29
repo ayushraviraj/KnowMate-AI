@@ -25,11 +25,11 @@ KnowMate AI is an AI-powered Retrieval-Augmented Generation (RAG) assistant that
 ```text
                                                   User Input
                              │
-        ┌────────────┬───────┼───────┬────────────┐
-        │            │       │       │            │
-       PDF        PDF URL  YouTube  Pasted Text
-        │            │       │       │            │
-        └────────────┴───────┼───────┴────────────┘
+        ┌────────────┬──────────────┬────────────┐
+        │            │              │            │
+       PDF        PDF URL         YouTube      Pasted Text
+        │            │              │            │
+        └────────────┴──────────────┴────────────┘
                              ↓
                       Data Extraction
                              ↓
