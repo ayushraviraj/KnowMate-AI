@@ -1,6 +1,6 @@
 # 🧠 KnowMate AI
 
-> **A Multi-Source Retrieval-Augmented Generation (RAG) Assistant built with LangGraph, FastAPI, FAISS, Groq, and MCP.**
+> **Multi-source RAG assistant for chatting with PDFs, PDF URLs, YouTube videos, and text using LangGraph, FastAPI, FAISS, Groq, and MCP.**
 
 KnowMate AI is an AI-powered Retrieval-Augmented Generation (RAG) assistant that enables users to interact with multiple knowledge sources through natural language. It supports PDF documents, PDF URLs, YouTube videos, and custom text, retrieves relevant information using semantic search, and generates context-aware responses using Large Language Models.
 
